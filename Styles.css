@@ -1,0 +1,332 @@
+.block_for_searching{
+   display: flex;
+   position: relative;
+   width: 100%;
+   top: 0;
+   left: 0px;
+   margin-top: 30px;
+   justify-content: center;
+  
+}
+
+.icon_alignment{
+   margin-left: 858px;
+   margin-top: -27px;
+   
+}
+
+
+.big_flex{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 1000px;
+    top: 100px;
+    margin-left: 20vw;
+    margin-right: 20vW;
+}
+
+/* .big_flex{
+  position: relative;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+   height: 1000px;
+   top: 100px;
+   margin-left: 450px;
+   margin-right: 450px;
+
+} */
+
+.small_flex{
+   position: relative;
+   width: 280px;
+   height: 200px;
+   box-shadow: -10px -10px 15px rgba(255,255,255,0.5),
+            10px 10px 15px rgba(70,70,70,0.12);
+   border-color: rgb(255, 0, 0);
+   padding-left: 15px;
+}
+
+.margins{
+   margin-top:10px;
+}
+
+.decoration{
+   font-size: 20px;
+   font-weight: bold;
+}
+
+/* .block_for_searching{
+width: auto;
+height: 50px;
+top: 0px;
+text-align: center;
+margin-left: 300px;
+margin-right: 300px;
+
+
+background-color: red;
+} */
+
+.iphone{
+   bottom: 22px;
+   left:18px;
+   color: gray;
+   position: relative;
+
+
+}
+
+.email_icon{
+   box-sizing: border-box;
+   position: relative;
+   display: inline-block;
+   transform: scale(var(--ggs,1));
+   width: 15px;
+   height: 12px;
+   border: 2px solid;
+   border-color:palevioletred;
+   margin-top: 0px;
+}
+
+.email_icon::after{
+   content: "";
+   display: inline-block;
+   box-sizing: border-box;
+   position: absolute;
+   border-radius: 5px;
+   border-width: 0.5px;
+   border-style: solid;
+   border-color:palevioletred;
+   width: 1.5px;
+   height: 10px;
+   background: palevioletred;
+   transform: rotate(-45deg);
+   bottom: 1px;
+   left: 1.5px
+}
+.email_text{
+color: gray;
+position: relative;
+left: 20px;
+bottom: 20px;
+}
+
+.email_icon::before{
+   content: "";
+   display: block;
+   box-sizing: border-box;
+   position: absolute;
+   border-radius: 5px;
+   border-width: 0.5px;
+   border-style: solid;
+   border-color:palevioletred;
+   width: 1.5px;
+   height: 10px;
+   background: palevioletred;
+   transform: rotate(45deg);
+   bottom: 1px;
+   left: 8px
+}
+
+input{
+   height: 30px;
+   border-radius: 15px;
+   border-width: 1px;
+   width: 57.5vw;
+}
+
+.icon_iphone{
+   box-sizing: border-box;
+   position: relative;
+   display: block;
+   transform: scale(var(--ggs,1));
+   width: 10px;
+   height: 20px;
+   border: 2px solid;
+   border-color:palevioletred;
+   margin-top: 50px;
+   border-radius: 2px;
+}
+
+.icon_iphone::after{
+   content: "";
+   box-sizing: border-box;
+   display: block;
+   position: relative;
+   width: 8px;
+   height: 1.5px;
+   border-radius: 5px;
+   border-width: 0.5px;
+   border-style: solid;
+   border-color: palevioletred;
+   background-color:palevioletred;
+   top: -0.5px;
+   right: 1px;   
+}
+
+.icon_iphone::before{
+   content: "";
+   box-sizing: border-box;
+   display: block;
+   position: relative;
+   width: 8px;
+   height: 1.5px;
+   border-radius: 5px;
+   border-width: 0.5px;
+   border-style: solid;
+   border-color: palevioletred;
+   background-color:palevioletred;
+   top: 11px;
+   right: 1px;   
+}
+
+.icon_of_circle{
+   box-sizing: border-box;
+   position: relative;
+   display: block;
+   border-radius: 100%;
+   width: 3px;
+   height: 3px;
+   border-color: palevioletred;
+   border-style: solid;
+   border-width: 0.5px;
+   top: -5px;
+   left: 3.5px;
+}
+
+.icon_search{
+   box-sizing: border-box;
+   position: relative;
+   display: block;
+   transform: scale(var(--ggs,1));
+   width: 16px;
+   height: 16px;
+   border: 2px solid;
+   border-color:palevioletred;
+   border-radius: 100%;
+   margin-left: -4px;
+   margin-top: -4px;
+   
+}
+
+.icon_search::after{
+   content: "";
+   display: block;
+   box-sizing: border-box;
+   position: absolute;
+   border-radius: 3px;
+   width: 2px;
+   height: 8px;
+   background: palevioletred;
+   transform: rotate(-45deg);
+   top: 12px;
+   left: 14px;
+   
+
+}
+
+.pop_up{
+   display: none;
+   width:100%;
+   height: 100%;
+   position: fixed;
+   left: 0;
+   top: 0;
+   background-color: rgba(0,0,0,.8);
+   z-index: 2;
+}
+
+.pop_up.active{
+display: block;
+}
+
+.pop_up_container{
+   display: flex;
+   width:100%;
+   height: 100%;
+   margin-top: -100px;
+}
+
+.pop_up_body{
+   margin: auto;
+   width: 350px;
+   background-color: white;
+   border-radius: 10px;
+   padding: 100px 15px 110px 15px;
+   position: relative;
+   height: 100px;
+
+}
+
+.pop_up_text_decoration{
+   position: relative;
+   margin-left: 2px;
+   margin-top: 9px;
+
+}
+
+#container_of_text{
+   display: block;
+   margin-top: -40px;
+
+}
+
+#additional_style{
+   position: relative;
+   margin-top: 30px;
+
+}
+
+.icon_cross::after{
+   content: "";
+   display: block;
+   box-sizing: border-box;
+   position: absolute;
+   border-radius: 1px;
+   width: 0.5px;
+   height: 15px;
+   background: white;
+   transform: rotate(-45deg);
+   
+}
+
+.icon_cross::before{
+   content: "";
+   display: block;
+   box-sizing: border-box;
+   position: absolute;
+   border-radius: 1px;
+   width: 0.5px;
+   height: 15px;
+   background: white;
+   transform: rotate(45deg);
+   
+}
+.pos{
+   position: absolute; 
+   left: 50%; 
+   top: 50%; 
+   transform: translate(-50%,-50%);
+   margin-top: -7px;
+   margin-left: -0.5px;
+}
+
+.circle{
+   position: absolute;
+   border-radius: 100%;
+   width: 30px;
+   height: 30px;
+   background-color: palevioletred;
+   top: -15px;
+   left: 170px;
+   cursor: pointer;
+
+}
+
+/* #decoration_name{
+
+
+} */
